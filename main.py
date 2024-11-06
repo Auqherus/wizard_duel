@@ -28,3 +28,13 @@ class Wizard:
 
     def drink_mana_potion(self):
         self.mana += potion_mana
+
+def main():
+
+    dumbledore = Wizard("Albus Dumbledore", 150, 400)
+    voldemort = Wizard("Lord Voldemort", 220, 370)
+
+    dumbledore.cast_fireball(voldemort)
+    print(dumbledore.is_alive())
+
+main()
